@@ -19,6 +19,7 @@ public class TicketingSystem {
      * Start your project from the main method below ;) have fun!
      */
     public static void main(String[] args) {
-
+        Ticket myTicket = new Ticket("20501343134");
+        System.out.println(myTicket.getID());
     }
 }
