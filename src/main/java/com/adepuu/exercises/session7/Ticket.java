@@ -11,7 +11,7 @@ public class Ticket{
     }
 
     public Ticket(String eventID){
-        UUID uuid = new UUID.randomUUID();
+        UUID uuid = UUID.randomUUID();
         this.ID = uuid.toString();
         this.eventID = eventID;
     }
