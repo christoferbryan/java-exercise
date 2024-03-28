@@ -19,6 +19,29 @@ public class TicketingSystem {
      * Start your project from the main method below ;) have fun!
      */
     public static void main(String[] args) {
+        int ticketStock = 15;
+        int count = 0;
 
+        Event event = new Event(ticketStock);
+
+        for(int i=0; i<51; i++){
+            User user = new User();
+            boolean bookStatus = event.bookTicket(user.getID());
+
+            if(bookStatus){
+                Ticket confirmedTicket = event.confirmTicket(user.getID());
+                if(confirmedTicket != null){
+                    user.saveTicket(confirmedTicket);
+                }
+            }
+
+            Ticket userTicket = user.getTicket();
+            if(userTicket!=null){
+                count++;
+                System.out.println("User: "+user.getID()+", Ticket ID: "+userTicket.getID()+", Event ID: "+userTicket.getEventID());
+                System.out.println(count);
+            }
+
+        }
     }
 }
