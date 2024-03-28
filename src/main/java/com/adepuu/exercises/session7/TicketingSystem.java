@@ -37,9 +37,9 @@ public class TicketingSystem {
 
             Ticket userTicket = user.getTicket();
             if(userTicket!=null){
-                count++;
+//                count++;
                 System.out.println("User: "+user.getID()+", Ticket ID: "+userTicket.getID()+", Event ID: "+userTicket.getEventID());
-                System.out.println(count);
+//                System.out.println(count);
             }
 
         }
