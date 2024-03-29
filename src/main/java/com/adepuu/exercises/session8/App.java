@@ -47,12 +47,6 @@ public class App {
          Connect all the functionalities with the related menu ;)
          GL HF! ;)
         */
-        Scanner scanner = new Scanner(System.in);
 
-        Auth auth = new Auth();
-        Menu menu = new Menu(scanner, auth);
-        menu.authPrompt();
-
-        scanner.close();
     }
 }
