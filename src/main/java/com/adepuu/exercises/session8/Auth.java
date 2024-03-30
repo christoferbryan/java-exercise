@@ -6,5 +6,7 @@ public class Auth {
     private HashMap<String, User> registeredUsers = new HashMap<>();
     private String activeUserName;
 
+    public boolean registerUser(){
 
+    }
 }
