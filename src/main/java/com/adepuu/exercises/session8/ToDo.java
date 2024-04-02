@@ -1,5 +1,22 @@
 package com.adepuu.exercises.session8;
 
 public class ToDo {
+    private String description;
+    private boolean isDone;
 
+    public ToDo(String description){
+        this.description = description;
+    }
+
+    public String getDescription(){
+        return description;
+    }
+
+    public boolean getIsDone(){
+        return isDone;
+    }
+
+    public void setDone(){
+        isDone = true;
+    }
 }

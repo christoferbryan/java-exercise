@@ -48,5 +48,12 @@ public class App {
          GL HF! ;)
         */
 
+        Scanner scanner = new Scanner(System.in);
+
+        Auth auth = new Auth();
+        Menu menu = new Menu(scanner, auth);
+        menu.authPrompt();
+
+        scanner.close();
     }
 }

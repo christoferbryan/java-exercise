@@ -22,7 +22,7 @@ public class User {
         return this.username.equals(username) && this.password.equals(password);
     }
 
-    public ToDoList getTodolist(){
+    public ToDoList getTodoList(){
         return todoList;
     }
 }
